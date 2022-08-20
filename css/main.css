@@ -1560,14 +1560,13 @@ only screen and (                min-resolution: 2dppx) {
 .how__oval-wrapper::after {
   position: absolute;
   top: 114px;
-  left: 52px;
   z-index: 0;
   display: block;
   width: 467px;
   height: 2px;
   background-image: url(../images/line.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: calc(50% + 14px);
   content: "";
 }
 .how__oval {
@@ -1639,7 +1638,6 @@ only screen and (                min-resolution: 2dppx) {
     margin-bottom: 67px;
   }
   .how__oval-wrapper::after {
-    left: calc(50% - 496px);
     width: 760px;
   }
   .how__oval:not(:last-child){
